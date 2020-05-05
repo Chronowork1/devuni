@@ -31,8 +31,10 @@ function getParameterByName(name, url) {
   var listView = function(id, Features,Description, Images) {
     return `
       <div>
-        ${Images ? `<img src="${Images[0].url}" class="spaceImg">` : ``}
-        <div class="card-body">
+        <div class="spaceDiv">
+          ${Images ? `<img src="${Images[0].url}" class='spaceImg'>` : ``}
+        </div>
+        <div class="card-body info">
           <h2>${Features}</h2>
           <p>${Description}</p>
         </div>
