@@ -35,7 +35,6 @@ function getParameterByName(name, url) {
         </div>
         <div class="card-body info">
           <h2><a href="index.html?id=${id}">${Features}</a></h2>
-          <p>${Description}</p>
         </div>
       </div>
     `;
@@ -55,14 +54,13 @@ function getParameterByName(name, url) {
 
   var detailView = function(Description){
     return `
-    <div>
-      <div class="card-body info">
+    <div class="desc-body">
+      <div class="card-body">
         <p>${Description}</p>
       </div>
     </div>
     `
   };
-  console.log(detailView);
 
 var id = getParameterByName("id");
 if(id) {
