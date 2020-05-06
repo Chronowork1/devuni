@@ -1,13 +1,8 @@
 html{
-  width:100%;
-  height: 100%;
+  min-height:100%;
 }
 
 body{
-  /*background: linear-gradient(180deg, #fafdec,#b1adad,#e39e1c,#9fc164,#c1440e,#d8ca9d,#274687,#e3e0c0,#c6d3e3, #414a4c);*/
-  /*background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;*/
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
   font-family: 'Raleway', Helvetica, sans-serif;
   min-width: 320px;
@@ -18,15 +13,76 @@ body{
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #090A0F; 
 }
  
 ::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #1f3e5a; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555; 
+}
+
+.info{
+  position:relative;
+  left: -200px;
+  animation: slide-right 2s ease-in both;
+}
+
+.info a{
+  text-decoration: none;
+  color:#1f3e5a;
+}
+
+.info a:hover{
+  color: white;
+}
+
+.list-view{
+  color: white;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align:center;
+  width:50%;
+}
+
+.detail-view{
+  color:white;
+  margin: 0 auto;
+  max-width: 1000px;
+  max-height:2000px;
+  text-align:center;
+  width:50%;
+  height:100%;
+  position: relative;
+  top: 250px;
+}
+
+
+.spaceImg{
+  border: 2px solid rgb(43, 41, 41);
+  border-radius: 15px;
+  cursor:none;
+  max-width: 100%;
+  max-height: 100%;
+  transition: 0s 1800s;
+}
+
+.spaceImg:hover{
+  border: 2px solid #1f3e5a;
+  transition: 0s;
+}
+
+@keyframes slide-right {
+  0%{
+    opacity:0;
+    transform: translateX(0);
+  }
+  100%{
+    opacity:1;
+    transform: translate(200px);
+  }
 }
 
 /*#star1{
@@ -82,60 +138,6 @@ body{
   background: transparent;
   
 }*/
-
-.info{
-  position:relative;
-  left: -200px;
-  animation: slide-right 2s ease-in both;
-}
-
-.list-view{
-  color: white;
-  margin: 0 auto;
-  max-width: 1000px;
-  text-align:center;
-  width:50%;
-}
-
-.detail-view{
-  color:white;
-  margin: 0 auto;
-  max-width: 1000px;
-  max-height:2000px;
-  text-align:center;
-  width:50%;
-  height:100%;
-}
-
-.desc-body{
-  height:657px;
-  
-}
-
-.spaceImg{
-  border: 2px solid rgb(43, 41, 41);
-  border-radius: 15px;
-  cursor:none;
-  max-width: 100%;
-  max-height: 100%;
-  transition: 0s 1800s;
-}
-
-.spaceImg:hover{
-  border: 2px solid #1f3e5a;
-  transition: 0s;
-}
-
-@keyframes slide-right {
-  0%{
-    opacity:0;
-    transform: translateX(0);
-  }
-  100%{
-    opacity:1;
-    transform: translate(200px);
-  }
-}
 
 /*@keyframes animStar{
   from{
