@@ -9,7 +9,7 @@ $(document).ready(function(){
     })
 
     function appendImage(srcURL){
-        $("#root").append('<img src='+srcURL.hdurl+'>');
+        $("#root").append('<img class="spaceImg" src='+srcURL.hdurl+'>');
         $("#root").append('<h1>'+srcURL.title+'</h1>');
         $("#root").append('<p>'+srcURL.explanation+'</p>');
     }
