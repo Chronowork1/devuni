@@ -45,16 +45,20 @@ function getParameterByName(name, url) {
       `https://api.airtable.com/v0/appJb4yWqdpQKLPMl/Universe/${id}?api_key=keyhIKEvxWbZNk1bF`,
       function(record) {
         var html = [];
+        var Images = record.fields["Images"];
         var Description = record.fields["Description"];
-        html.push(detailView(Description));
+        html.push(detailView(Images,Description));
         $(".detail-view").append(html);
       }
     )
   }
 
-  var detailView = function(Description){
+  var detailView = function(Images, Description){
     return `
     <div class="desc-body">
+      <div class="spaceDiv">
+        ${Images ? `<img src="${Images[0].url}" class='spaceImg'>` : ``}
+      </div>
       <div class="card-body">
         <p>${Description}</p>
       </div>

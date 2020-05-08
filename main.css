@@ -69,8 +69,6 @@ body {
   text-align: center;
   width: 50%;
   height: 100%;
-  position: relative;
-  top: 250px;
 }
 
 .spaceImg {
@@ -114,4 +112,3 @@ body {
             transform: translate(200px);
   }
 }
-/*# sourceMappingURL=main.css.map */
