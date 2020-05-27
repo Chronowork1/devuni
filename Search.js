@@ -11,7 +11,7 @@ $(document).ready(function(){
             url: nasaURL,
             method: "GET",
             success: function(response){
-                var url = response.collection.href
+                var url = response.collection.items[0].href
                 console.log(url)
                 appendToRoot(url);
             }
@@ -25,7 +25,7 @@ $(document).ready(function(){
     }
     
     function nasaSearchInput(search){
-        var nasaURL = "https://images-api.nasa.gov/search?q="+search+"?api_key=zbSs6K5WiNMfDe3PWJb2m4RV92LGgykgYGyaTwl1";
+        var nasaURL = "https://images-api.nasa.gov/search?q="+search;
         return nasaURL;
     }
     
