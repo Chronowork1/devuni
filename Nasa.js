@@ -1,4 +1,7 @@
 $(document).ready(function(){
+
+    //Retrieves Informaton for api.nasa throguh a GET method
+    //IF successful, append the information to appendImage
     $.ajax({
         url:"https://api.nasa.gov/planetary/apod?api_key=zbSs6K5WiNMfDe3PWJb2m4RV92LGgykgYGyaTwl1",
         method:"GET",
