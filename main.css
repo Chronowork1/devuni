@@ -50,79 +50,60 @@ body {
 
 #sun {
   border-left: 6px solid white;
-  height: 500px;
+  height: 41.517px;
   text-align: center;
 }
 
 #mercury {
   border-left: 6px solid white;
-  height: 500px;
+  height: 31.1px;
   text-align: center;
 }
 
 #venus {
   border-left: 6px solid white;
-  height: 500px;
+  height: 160.17px;
   text-align: center;
 }
 
 #earth {
   border-left: 6px solid white;
-  height: 500px;
-  text-align: center;
-}
-
-#moon {
-  border-left: 6px solid white;
-  height: 500px;
+  height: 166.8px;
   text-align: center;
 }
 
 #mars {
   border-left: 6px solid white;
-  height: 500px;
-  text-align: center;
-}
-
-#asteroidbelt {
-  border-left: 6px solid white;
-  height: 500px;
+  height: 1000px;
   text-align: center;
 }
 
 #jupiter {
   border-left: 6px solid white;
-  height: 500px;
+  height: 456px;
   text-align: center;
 }
 
 #saturn {
   border-left: 6px solid white;
-  height: 500px;
+  height: 896px;
   text-align: center;
 }
 
 #uranus {
   border-left: 6px solid white;
-  height: 500px;
+  height: 1011px;
   text-align: center;
 }
 
 #neptune {
   border-left: 6px solid white;
-  height: 500px;
-  text-align: center;
-}
-
-#comet {
-  border-left: 6px solid white;
-  height: 500px;
+  height: 2.231px;
   text-align: center;
 }
 
 #pluto {
   border-left: 6px solid white;
-  height: 500px;
   text-align: center;
 }
 
